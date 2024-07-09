@@ -64,35 +64,35 @@
             <!-- modal body -->
             <div class="modal-body">
               <!-- Form inside modal -->
-              <form>
+              <form class="row justify-content-center" id="taskForm">
                 <!-- Task Title -->
-                <div class="mb-3">
+                <div class="col-6 mb-3">
                   <label for="taskTitleInput" class="form-label"
                     >Task Title</label
                   >
                   <input type="text" class="form-control" id="taskTitleInput" />
                 </div>
                 <!-- Task due date -->
-                <div class="mb-3">
+                <div class="col-6 mb-3">
                   <label for="taskDueDate" class="form-label"
                     >Task Due Date</label
                   >
-                  <input type="date" class="form-control" id="taskDueDate" />
+                  <input type="text" class="form-control" id="datepicker" />
                 </div>
                 <!-- Task Description -->
-                <div class="mb-3">
+                <div class="col-12 mb-3">
                   <label for="taskDescription" class="form-label"
                     >Task Description</label
                   >
                   <textarea
                     class="form-control"
-                    id="textDescription"
+                    id="taskDescription"
                   ></textarea>
                 </div>
+                <button type="submit" class="btn btn-success col-6">
+                  Add Task
+                </button>
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-success">Add Task</button>
             </div>
           </div>
         </div>
